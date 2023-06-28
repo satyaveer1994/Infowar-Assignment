@@ -9,8 +9,11 @@ This is a Node.js API for managing employee data. It provides endpoints to creat
 Creates a new employee record.
 
 - URL: `/employees`
+
 - Method: `POST`
+
 - Request Body:
+
   ```json
   {
     "name": "John Doe",
@@ -29,7 +32,9 @@ Creates a new employee record.
   ```
 
 Success Response:
+
 . Status: 201 Created
+
 . Body:
 
       {
@@ -51,12 +56,17 @@ Success Response:
     }
 
 Get Employee
+
 Retrieves an employee record by ID.
 
 URL: /employees/:id
+
 Method: GET
+
 Success Response:
+
 . Status: 200 OK
+
 . Body:
 
      {
@@ -82,7 +92,9 @@ Success Response:
 Updates an existing employee record.
 
 URL: /employees/:id
+
 Method: PUT
+
 Request Body:
 
     {
@@ -101,7 +113,9 @@ Request Body:
     }
 
 Success Response:
+
 . Status: 200 OK
+
 . Body:
 
     {
@@ -127,9 +141,13 @@ Delete Employee
 Deletes an employee record.
 
 URL: /employees/:id
+
 Method: DELETE
+
 Success Response:
+
 . Status: 200 OK
+
 . Body:
 
     {
@@ -137,15 +155,23 @@ Success Response:
     }
 
 List Employees with Pagination
+
 Retrieves a list of employees with pagination.
 
 URL: /employees
+
 Method: GET
+
 Query Parameters:
+
 page (optional): Page number (default: 1)
+
 limit (optional): Number of records per page (default: 10)
+
 Success Response:
+
 . Status: 200 OK
+
 . Body:
 
       [
@@ -182,4 +208,5 @@ Start the server:
     nodemon/src/index.js
 
 The server will start running on http://localhost:3000.
+
 github link:- https://github.com/satyaveer1994/Infowar-Assignment.git
